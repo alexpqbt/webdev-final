@@ -99,3 +99,29 @@ nav ul {
 .about-text p {
     font-size: 18px;
 }
+
+.mis-vis {
+    width: 100%;
+
+    background-color: #144e94;
+    color: white;
+}
+
+.mis-vis .container {
+    margin: 3rem auto;
+
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.card {
+    width: 450px;
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
