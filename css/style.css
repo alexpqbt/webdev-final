@@ -49,15 +49,17 @@ header {
     font-weight: 700;
 }
 
-nav img {
-    width: 100px;
-    height: 100px;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+nav img {
+    width: 100px;
+    height: auto;
+
+    margin-top: 1rem;
 }
 
 nav ul {
@@ -68,6 +70,8 @@ nav ul {
 }
 
 .about-uc {
+    flex: 1;
+
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -83,5 +87,9 @@ nav ul {
 .about-text {
     display: flex;
     flex-flow: column wrap;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.about-text p {
+    font-size: 18px;
 }
