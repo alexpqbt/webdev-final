@@ -74,19 +74,31 @@ header {
     font-weight: 700;
 }
 
+.nav-container {
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 1rem 0;
+
+    position: fixed;
+
+    z-index: 1;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     width: 100%;
+
+    margin: 0 auto;
 }
 
 nav img {
     width: 100px;
     height: auto;
-
-    margin-top: 1rem;
 }
 
 nav ul {
