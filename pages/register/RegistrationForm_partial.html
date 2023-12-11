@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-52379.jpg') center/cover no-repeat; /* Add your image path here */
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      background-color: #144e94; /* Blue background */
+      color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 500px;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: calc(100% - 16px);
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #ffff00;
+      color: #000000;
+      padding: 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #e67e22;
+    }
+  </style>
+ 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("registrationForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        validateAndRegister();
+      });
+  
+      function validateAndRegister() {
+        var usernameInput = document.getElementById("username");
+        var username = usernameInput.value;
+  
+        var passwordInput = document.getElementById("password");
+        var password = passwordInput.value;
+  
+        var confirmPasswordInput = document.getElementById("confirmPassword");
+        var confirmPassword = confirmPasswordInput.value;
+  
+        // Check if the username contains '@'
+        if (username.includes('@')) {
+          // Check if the password meets the criteria (e.g., minimum length)
+          if (password.length >= 8) {
+            // Check if the password matches the confirmed password
+            if (password === confirmPassword) {
+              // Show an alert upon successful registration
+              alert("Successfully registered!");
+  
+              // Reset the form for a new registration
+              document.getElementById("registrationForm").reset();
+            } else {
+              alert("Passwords do not match. Please try again.");
+            }
+          } else {
+            alert("Password must be at least 8 characters long. Please try again.");
+          }
+        } else {
+          // Display an error message for the username
+          alert("Username must contain '@'. Please try again.");
+        }
+      }
+    });
+  </script>
+  
+</head>
+<body>
+  <form id="registrationForm">
+    <h2>REGISTRATION FORM</h2>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" required>
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" required>
+    
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address" required>
+    <span id="addressError" class="error"></span>
+
+    <label for="username">Username</label>
+    <input type="text" id="username" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" required>
+
+    <label for="confirmPassword">Confirm Password</label>
+    <input type="password" id="confirmPassword" required>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
