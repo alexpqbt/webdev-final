@@ -5,11 +5,11 @@
 ::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .fixed-width {
-    width: 1120px;
+    max-width: 1120px;
 }
 
 a {
@@ -59,6 +59,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    width: 100%;
 }
 
 nav img {
@@ -79,18 +81,23 @@ nav ul {
     flex: 1;
 
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
 
-    padding: 2rem;
+    padding: 4rem 2rem;
 }
 
 .about-uc img {
-    width: 50%;
+    width: 100%;
+    max-width: 530px;
     height: auto;
 }
 
 .about-text {
+    width: 50%;
+
     display: flex;
     flex-flow: column wrap;
     gap: 1.5rem;
@@ -112,6 +119,7 @@ nav ul {
 
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 6rem;
 }
 
