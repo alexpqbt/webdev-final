@@ -164,7 +164,17 @@ nav ul {
     margin-bottom: 1rem;
 }
 
+.programs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 .programs .cards {
+    display: flex;
+    flex-flow: row wrap;
     gap: 2.2rem;
 }
 
@@ -180,6 +190,13 @@ nav ul {
     width: 300px;
 
     text-align: left;
+}
+
+.programs button {
+    border: 1px solid black;
+    border-radius: 8px;
+
+    padding: 1rem 1.5rem;
 }
 
 .news {
