@@ -17,6 +17,10 @@ button {
     all: unset;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .fixed-width {
     max-width: 1120px;
 }
