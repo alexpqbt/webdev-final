@@ -27,7 +27,6 @@ button {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 6rem;
 }
 
 .card {
@@ -156,6 +155,10 @@ nav ul {
 
     background-color: #144e94;
     color: white;
+}
+
+.mis-vis .container {
+    gap: 6rem;
 }
 
 .mis-vis .card img {
