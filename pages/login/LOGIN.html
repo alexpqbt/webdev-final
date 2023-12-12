@@ -1,74 +1,35 @@
-<!DOCTYPE html>   
-<html>   
-<head>  
-    <script src="LOGIN.js" type="text/javascript"> </script>
-<meta name="viewport" content="width=device-width, initial-scale=1">  
-<title> Login Page </title>  
-<style>   
-Body {  
-  font-family:poppins;
-  background-color: #144e94;  
-}  
-button {   
-       background-color: #ffffff;   
-       width: 100%;  
-        color:black;   
-        padding: 15px;   
-        margin: 10px 0px;   
-        border: none;   
-        cursor: pointer;   
-         }   
- form {   
-        border: 3px solid #f1f1f1;   
-    }   
- input[type=text], input[type=password] {   
-        width: 100%;   
-        margin: 8px 0;  
-        padding: 12px 20px;   
-        display: inline-block;   
-        border: 2px solid #ffff57;   
-        box-sizing: border-box;   
-    }  
- button:hover {   
-        opacity: 0.7;   
-    }   
-  .cancelbtn {   
-        width: auto;   
-        padding: 10px 18px;  
-        margin: 10px 5px;  
-    }   
-        
-     
- .container {   
-        padding: 25px;   
-        background-color: #144e94; 
-        color: black; 
-       
-    }   
-   
-</style>   
-</head>    
-<body>    
-    <center> <h1> Student Login Form </h1> </center>   
-    <h2 style="color:#ffff57 ;">Login now to your account!</h2>
-    <form>  
-        <div class="container">   
-            <label>Username : </label>   
-            <input type="text" placeholder="Enter Username" name="username" required>  
-            <label>Password : </label>   
-            <input type="password" placeholder="Enter Password" name="password" required>  
-            <button type="submit">Login</button>   
-            <input type="checkbox" checked="checked"> REQUEST FOR PASSWORD 
-            <button type="button" class="cancelbtn"> Cancel</button>   
-            FORGOT <a href="#"> PASSCODE? </a>   <br>
-            <h3>How to log-in<br></h3>
-            1. Enter your username and password then click the "Login" button.<br>
-        
-            2. If you are a new user, click REQUEST FOR PASSWORD, and enter your student number.<br>
-            
-            For login problems, please send the complete details of the issue to UCLM tech support: (idk the email).<br>
-        </div>   
-    </form>    
-    
-</body>     
-</html>  
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <div class="login-text">
+          <h1>Student Login Form</h1>
+          <h2>Login now to your account!</h2>
+        </div>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          required
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+        />
+        <button type="submit">Login</button>
+        <div class="forgot">FORGOT <a href="#">PASSCODE?</a></div>
+      </div>
+    </form>
+    <script src="LOGIN.js" type="text/javascript"></script>
+  </body>
+</html>
