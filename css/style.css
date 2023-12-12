@@ -7,6 +7,16 @@
     padding: 0;
 }
 
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button {
+    all: unset;
+}
+
 .fixed-width {
     max-width: 1120px;
 }
@@ -154,7 +164,7 @@ nav ul {
     margin-bottom: 1rem;
 }
 
-.programs {
+.programs .cards {
     gap: 2.2rem;
 }
 
