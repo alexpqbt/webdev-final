@@ -9,6 +9,8 @@ body {
     font-family: 'Poppins', sans-serif;
 
     box-sizing: border-box;
+    
+    position: relative;
 }
 
 .people ul {
@@ -24,6 +26,8 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    
+    padding: 8rem 0;
 }
 
 .box {
