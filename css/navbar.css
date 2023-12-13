@@ -1,0 +1,53 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-width {
+    max-width: 1120px;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+
+    font-weight: 200;
+}
+
+.nav-container {
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 1rem 0;
+
+    position: fixed;
+
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    margin: 0 auto;
+}
+
+nav img {
+    width: 70px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 1rem;
+
+    color: white;
+}
