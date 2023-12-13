@@ -38,12 +38,16 @@ button {
   margin: 10px 0px;
   border: none;
   cursor: pointer;
+
+  border-radius: 4px;
 }
 
 form {
   width: 400px;
 
   margin-top: 15rem;
+
+  border-radius: 8px;
 
   background-color: #144e94;
 }
@@ -80,6 +84,7 @@ input[type="password"] {
   display: inline-block;
   box-sizing: border-box;
   outline: none;
+  border-radius: 8px;
 }
 
 input:focus {
