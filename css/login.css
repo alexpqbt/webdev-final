@@ -41,9 +41,9 @@ button {
 }
 
 form {
-  width: 310px;
+  width: 400px;
 
-  margin-top: 14%;
+  margin-top: 15rem;
 
   background-color: #144e94;
 }
@@ -59,12 +59,17 @@ form label {
 }
 
 .login-text h1 {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .login-text h2 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: normal;
+}
+
+.inputs {
+  width: 310px;
+  margin: 0 auto;
 }
 
 input[type="text"],
