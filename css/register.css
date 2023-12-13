@@ -43,13 +43,14 @@ input {
 }
 
 button {
-  background-color: #ffff00;
+  width: 95%;
+
   color: #000000;
-  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 8px 0;
+  margin: 10px 0px;
   border: none;
-  border-radius: 3px;
   cursor: pointer;
-  width: 100%;
 }
 
 button:hover {
