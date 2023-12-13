@@ -1,133 +1,137 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feedback form</title>
-    <script src="https://kit.fontawesome.com/2d275883fd.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/jpg" href="University-of-Cebu-Logo.jpg">
-</head>
+    <script
+      src="https://kit.fontawesome.com/2d275883fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/jpg" href="University-of-Cebu-Logo.jpg" />
+    <link rel="stylesheet" href="/css/navbar.css">
+  </head>
 
-<style>
-    @import url('https://fonts.googleapis.com/css?family=Poppins');
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: 'Poppins', sans-serif;
-        box-sizing: border-box;
-        outline: none;
-        
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      box-sizing: border-box;
+      outline: none;
     }
 
-
- 
     body {
-        display: flex;
-        min-height: 100vh;
-        align-items: center;
-        justify-content: center;
-        color:rgb(255, 251, 251)   ;
-        background-image: url(uclm-.jpg);
-        background-position: center;
-        background-size: cover;
-    
-        
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      color: rgb(255, 251, 251);
+      background-image: url(uclm-.jpg);
+      background-position: center;
+      background-size: cover;
     }
-
-    
 
     .container {
-        width: 360px;
-        background-color: #1965c2;
-        box-shadow: 0 0 20px    rgb(161, 156, 156);
-      
-        border-radius: 10px;
+      width: 360px;
+      background-color: #1965c2;
+      box-shadow: 0 0 20px rgb(161, 156, 156);
 
+      border-radius: 10px;
     }
 
     i {
-        color: rgb(117, 103, 103);
+      color: rgb(117, 103, 103);
     }
 
-    .container form{
-        width: 100%;
-        text-align: center;
-        padding: 25px 20px;
-
+    .container form {
+      width: 100%;
+      text-align: center;
+      padding: 25px 20px;
     }
 
     form h1 {
-        padding: 10px 0;
+      padding: 10px 0;
     }
 
     form .id {
-        position: relative;
-
+      position: relative;
     }
 
-    .id i{
-        position: absolute;
-        font-size: 20px;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
+    .id i {
+      position: absolute;
+      font-size: 20px;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
     }
 
     form input {
-        width: 100%;
-        height: 50px;
-        margin: 4px 0;
-        border: 1px solid rgb(97, 92, 92);
-        border-radius: 5px;
-        font-size: 15px;
-        padding: 0 15px;
-        padding-right: 45px;
-
+      width: 100%;
+      height: 50px;
+      margin: 4px 0;
+      border: 1px solid rgb(97, 92, 92);
+      border-radius: 5px;
+      font-size: 15px;
+      padding: 0 15px;
+      padding-right: 45px;
     }
 
     form textarea {
-        padding: 5px 15px;
-        border: 1px solid rgb(110, 106, 106);
-        border-radius: 5px;
-        font-size: 15px;
-        width: 100%;
-        margin: 4px 0;
+      padding: 5px 15px;
+      border: 1px solid rgb(110, 106, 106);
+      border-radius: 5px;
+      font-size: 15px;
+      width: 100%;
+      margin: 4px 0;
     }
 
     form button {
-        margin-top: 5px;
-        border: none;
-        background: rgb(105, 147, 238);
-        color: rgb(216, 220, 231);
-        padding: 10px 0;
-        width: 100%;
-        font-size: 20px;
-        font-weight: 800;
-        cursor: pointer;
-        border-radius: 3px;
+      margin-top: 5px;
+      border: none;
+      background: rgb(105, 147, 238);
+      color: rgb(216, 220, 231);
+      padding: 10px 0;
+      width: 100%;
+      font-size: 20px;
+      font-weight: 800;
+      cursor: pointer;
+      border-radius: 3px;
     }
-
-</style>
-<body>
-    <section>
-    
-    </section>
-    <div class="container">
-        
-        <form>
-            <h1>Feedback</h1>
-            <div class="id">
-                <input type="text" placeholder=" Your Full Name and ID Number">
-                <i class="far fa-user"></i>
-            </div>
-            <div class="id">
-                <input type="text" placeholder=" Your Email Address">
-                <i class="far fa-envelope"></i>
-            </div>
-            <textarea cols="15" rows="5" placeholder="Please state your opinions here . . . "></textarea>
-            <button>Send</button>
-         </form>
+  </style>
+  <body>
+    <div class="nav-container">
+      <nav class="fixed-width">
+        <a href="/index.html"><img src="/img/logo.png" alt="" /></a>
+        <ul>
+          <li><a href="/pages/profile/profile.html">Profile</a></li>
+          <li><a href="/pages/feedback/feedback.html">Feedback</a></li>
+          <li>
+            <a href="/pages/register/RegistrationForm_partial.html">Register</a>
+          </li>
+          <li><a href="/pages/login/LOGIN.html">Login</a></li>
+        </ul>
+      </nav>
     </div>
-   
-</body>
+    <div class="container">
+      <form>
+        <h1>Feedback</h1>
+        <div class="id">
+          <input type="text" placeholder=" Your Full Name and ID Number" />
+          <i class="far fa-user"></i>
+        </div>
+        <div class="id">
+          <input type="text" placeholder=" Your Email Address" />
+          <i class="far fa-envelope"></i>
+        </div>
+        <textarea
+          cols="15"
+          rows="5"
+          placeholder="Please state your opinions here . . . "
+        ></textarea>
+        <button>Send</button>
+      </form>
+    </div>
+  </body>
 </html>
