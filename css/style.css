@@ -82,12 +82,26 @@ header {
     align-items: center;
 }
 
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-1.5rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
 .hero-title h1 {
     font-size: 58px;
     font-weight: 700;
 
     letter-spacing: 4px;
     text-shadow: 3px 3px #0a3a93;
+
+    animation: fadeIn 2s linear 0s 1 normal none;
 }
 
 .nav-container {
