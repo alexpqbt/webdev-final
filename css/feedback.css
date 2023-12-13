@@ -85,3 +85,7 @@ form button {
   cursor: pointer;
   border-radius: 3px;
 }
+
+button:hover {
+  background-color: #e67e22;
+}
