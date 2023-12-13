@@ -13,7 +13,8 @@ body {
   align-items: center;
   justify-content: center;
   color: rgb(255, 251, 251);
-  background-image: url(/img/uclm-.jpg);
+  /* background-image: url(/img/uclm-.jpg); */
+  background-image: url('https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-52379.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -21,7 +22,7 @@ body {
 .container {
   width: 360px;
   background-color: #144e94;
-  box-shadow: 0 0 20px rgb(161, 156, 156);
+  /* box-shadow: 0 0 20px rgb(161, 156, 156); */
 
   border-radius: 10px;
 }
