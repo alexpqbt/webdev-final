@@ -1,53 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color:#144e94;
-    color: rgb(254, 252, 248);
-    margin: 0;
-    padding: 0;
+
+    box-sizing: border-box;
 }
-#top{
-    text-align: center;
-}
-.box{
-    background-color: #144e94;
-    margin: 100px;
-    padding-bottom: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.337);
-}
-#ayn{
-    padding-bottom: 200px;
-}
-.names{
-    padding-top: 50px;
-    margin-left: 50px;
-}
-.elementsWithin1{
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-}
-.elementsWithin2{
-    display: flex;
-    flex-direction: column;
-    margin-left: 650px;
-    margin-top: -340px;
-}
-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-}
-h2 {
-    font-size: 20px;
-    padding: 1;
-    margin-top: 0;
-}
+
 ul {
-    padding: 0;
-    margin: 0;
+    margin-bottom: 1rem;
 }
+
 li {
-    margin-bottom: 10px;
-    margin-left: 3%;
+    margin-left: 2.5rem;
+}
+
+.people {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    margin: 2rem;
+}
+
+.box {
+    display: flex;
+    gap: 3rem;
+
+    padding: 1.5rem 2.5rem;
+
+    width: 70%;
+}
+
+.box img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+}
+
+.box .names {
+    flex: 1;
+    text-align: center;
+    margin: auto 0;
+}
+
+.box div {
+    flex: 2;
 }
