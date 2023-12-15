@@ -121,7 +121,7 @@ header h2 {
     rgba(0, 0, 0, 0.65) 0%,
     rgba(0, 0, 0, 0) 95%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  
+
   transition: top 0.3s;
 }
 
