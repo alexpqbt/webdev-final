@@ -5,142 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to University of Cebu</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
     <link rel="manifest" href="./site.webmanifest" />
   </head>
   <body>
-    <header class="">
-      <div class="nav-container">
-        <nav class="fixed-width">
-          <a href="./index.html"><img src="./img/logo.png" alt="" /></a>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./pages/profile/profile.html">Profile</a></li>
-            <li><a href="./pages/feedback/feedback.html">Feedback</a></li>
-            <li><a href="./pages/register/register.html">Register</a></li>
-            <li><a href="./pages/login/login.html">Login</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="nav-container" id="navbar">
+      <nav class="fixed-width">
+        <a href="./index.html"
+          ><img src="./img/simulab-logo.svg" alt="Logo"
+        /></a>
+        <ul>
+          <li><a href="./pages/profile/profile.html">Profile</a></li>
+          <li><a href="./pages/feedback/feedback.html">Feedback</a></li>
+          <li><a href="./pages/register/register.html">Register</a></li>
+          <li><a href="./pages/login/login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header>
       <div class="hero-title">
-        <h1>You can't spell sUCcess without UC!</h1>
+        <h1>Tesseract</h1>
+        <h2>Transforming Ideas into Virtual Reality</h2>
       </div>
     </header>
-    <section class="fixed-width about-uc">
-      <img src="./img/University-of-Cebu.jpg" alt="" />
-      <div class="about-text">
+    <section class="about-us fixed-width">
+      <div class="about-us-text">
+        <h1>About Us</h1>
         <p>
-          From a modest start in 1964, the Cebu College of Commerce (CCC) of old
-          has come a long way. Beginning with a handful of enrollees, what used
-          to be an undersized college has succesfully evolved into a world-class
-          university in Asia Pacific, while holding true to its philantropic
-          mantra, "NO TUITION FEE INCREASE".
-        </p>
-        <p>
-          With forty-two (42) years of quality education, the University of Cebu
-          (UC) has been awarded a Deregulated status by the Commision on Higher
-          Education (CHED), while recognized by the Philippine Association of
-          Colleges and Universities Commision on Accreditation (PACUCOA) as a
-          learning institution with the most accredited programs.
+          Unlock the power of innovation with Tesseract, where imagination meets
+          simulation. Our cutting-edge services redefine the boundaries of
+          what's possible, offering a dynamic platform for creating and
+          visualizing in the digital realm.
         </p>
       </div>
+      <!-- <video id="background-video" autoplay loop muted>
+        <source src="./vid/spinnn2.webm" type="video/webm" />
+      </video> -->
     </section>
-    <section class="mis-vis">
-      <div class="fixed-width container">
-        <div class="card vision">
-          <img src="./img/eye.svg" alt="" />
-          <p>
-            Democratize quality education. Be the visionary and industry leader.
-            Give hope and transform lives.
-          </p>
-        </div>
-        <div class="card mission">
-          <img src="./img/target.svg" alt="" />
-          <p>
-            University of Cebu offers affordable and quality education
-            responsive to the demands of local and international communities
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="fixed-width container programs">
+    <section class="services">
       <div class="cards">
-        <div class="card">
-          <img src="./img/note-thanun-CYlPykF-qAM-unsplash (Small).jpg" alt="" />
-          <h3>Basic Education</h3>
-          <p>
-            Foundational education that offers a holistic approach of
-            comprehensive lessons with in-depth subject-specific knowledge
-          </p>
+        <div class="model img-card-hoz fixed-width">
+          <img src="./img/Z0ovCCH.jpeg" alt="" />
+          <div class="card-text">
+            <h1>3D Modeling</h1>
+            <p>
+              Elevate your concepts to the next dimension with our expert team of
+              3D artists. From intricate product designs to immersive
+              architectural renderings, Tesseract brings your visions to life in
+              stunning detail.
+            </p>
+            <button>Learn More</button>
+          </div>
         </div>
-        <div class="card">
-          <img src="./img/jason-goodman-vbxyFxlgpjM-unsplash (Small).jpg" alt="" />
-          <h3>Undergraduate Education</h3>
-          <p>
-            Rich learning experiences that provide a broad liberal arts
-            foundation and deep subject-area expertise
-          </p>
-        </div>
-        <div class="card">
-          <img src="./img/jud-mackrill-Of_m3hMsoAA-unsplash (Small).jpg" alt="" />
-          <h3>Graduate Education</h3>
-          <p>
-            Unsurpassed opportunities to participate in the advancement of
-            entire fields of knowledge
-          </p>
+        <div class="comsim img-card-hoz fixed-width">
+          <img src="./img/dron-quadcopter-simulation.png" alt="" />
+          <div class="card-text">
+            <h1>Computer Simulation</h1>
+            <p>
+              Dive into a world of possibilities as we harness the computational
+              prowess of our advanced systems. Tesseract's simulation expertise
+              spans across industries, allowing you to test, refine, and optimize
+              your ideas with unparalleled precision.
+            </p>
+            <button>Learn More</button>
+          </div>
         </div>
       </div>
-      <button type="button">Learn More</button>
-    </section>
-    <section class="news">
-      <div class="fixed-width container">
-        <aside class="left">
-          <div class="card-small">
-            <img
-              src="./img/New Offering Master in Business Administration-Financial-Technology.jpg"
-              alt=""
-            />
-            <h5>New Offering: Master in Business Administration</h5>
-          </div>
-          <div class="card-small">
-            <img src="./img/University of Cebu School of Law tops.jpg" alt="" />
-            <h5>University of Cebu School of Law tops Category 2 law school</h5>
-          </div>
-        </aside>
-        <div class="card-big">
-          <img
-            src="./img/College of Teacher Education of the University of Cebu.jpg"
-            alt=""
-          />
-          <div class="news-title">
-            <h1>Molding Resilient Learners through the Magic of Reading</h1>
-            <span>Wednesday, July 12, 2023</span>
-          </div>
-        </div>
-        <aside class="right">
-          <div class="card-small">
-            <img src="./img/University of Cebu School of Medicine.jpg" alt="" />
-            <h5>Physician Licensure Examination</h5>
-          </div>
-          <div class="card-small">
-            <img
-              src="./img/FRIENDS National Conference on Internationalization at Home (IaH).JPG"
-              alt=""
-            />
-            <h5>
-              FRIENDS National Conference on Internationalization at Home (IaH)
-            </h5>
-          </div>
-        </aside>
+
+      <div class="services-btns">
+        <button>Try our services</button>
       </div>
     </section>
     <footer>
       <div class="fixed-width footer-text">
-        <p>Created by: Paquibot, Alexandre</p>
-        <p>December 11, 2022</p>
+        <p>Paquibot, Alexandre (2023)</p>
       </div>
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>
