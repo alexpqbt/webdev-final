@@ -10,10 +10,24 @@
     ></script>
     <link rel="stylesheet" href="../../css/navbar.css" />
     <link rel="stylesheet" href="../../css/feedback.css" />
-    <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../favicon-16x16.png"
+    />
     <link rel="manifest" href="../../site.webmanifest" />
   </head>
   <body>
@@ -33,19 +47,32 @@
       <form>
         <h1>Feedback</h1>
         <div class="id">
-          <input type="text" placeholder=" Your Full Name and ID Number" />
+          <input
+            type="text"
+            inputmode="numeric"
+            placeholder="Your ID Number"
+            id="id-input"
+            required
+          />
           <i class="far fa-user"></i>
         </div>
         <div class="id">
-          <input type="text" placeholder=" Your Email Address" />
+          <input
+            type="email"
+            placeholder="Your Email Address"
+            id="mail-input"
+            required
+          />
           <i class="far fa-envelope"></i>
         </div>
         <textarea
           cols="15"
           rows="5"
           placeholder="Please state your opinions here . . . "
+          id="feedback-box"
+          required
         ></textarea>
-        <button>Send</button>
+        <button type="button" id="send-btn">Send</button>
       </form>
     </div>
     <footer>
@@ -54,5 +81,6 @@
         <p>December 11, 2022</p>
       </div>
     </footer>
+    <script src="../../js/feedback.js"></script>
   </body>
 </html>
