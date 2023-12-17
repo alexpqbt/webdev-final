@@ -33,19 +33,20 @@
       <form>
         <h1>Feedback</h1>
         <div class="id">
-          <input type="text" placeholder=" Your Full Name and ID Number" />
+          <input type="text" placeholder="Your ID Number" id="id-input" />
           <i class="far fa-user"></i>
         </div>
         <div class="id">
-          <input type="text" placeholder=" Your Email Address" />
+          <input type="text" placeholder="Your Email Address" id="mail-input"/>
           <i class="far fa-envelope"></i>
         </div>
         <textarea
           cols="15"
           rows="5"
           placeholder="Please state your opinions here . . . "
+          id="feedback-box"
         ></textarea>
-        <button>Send</button>
+        <button type="button" id="send-btn">Send</button>
       </form>
     </div>
     <footer>
@@ -54,5 +55,6 @@
         <p>December 11, 2022</p>
       </div>
     </footer>
+    <script src="../../js/feedback.js"></script>
   </body>
 </html>
