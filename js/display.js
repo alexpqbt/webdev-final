@@ -17,14 +17,14 @@ for (let i = 0; i < feedbackArray.length; i++) {
 
   const emailElement = document.createElement("span");
   emailElement.className = "user-email"
-  emailElement.textContent = feedback.email;
+  emailElement.textContent = `(${feedback.email})`;
   textContainer.appendChild(emailElement);
 
   feedbackContainer.appendChild(textContainer)
 
   const feedbackElement = document.createElement("p");
   feedbackElement.className = "user-feedback"
-  feedbackElement.textContent = feedback.feedback;
+  feedbackElement.textContent = `❝${feedback.feedback}❞`;
   feedbackContainer.appendChild(feedbackElement);
 
   postsSection.appendChild(feedbackContainer);
